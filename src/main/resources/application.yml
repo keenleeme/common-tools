@@ -1,0 +1,101 @@
+# spring
+spring:
+  application:
+    name: common-tools
+  main:
+    allow-bean-definition-overriding: true
+
+  # 文件上传设置
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  # 热部署设置
+  devtools:
+    restart:
+      enabled: false
+      # 排除路径
+      exclude: resources/**,WEB-INF/**
+      # 生效路径
+      additional-paths: src/main/java
+
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/common-tools?autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    username: root
+    password: 123456
+
+  # flyway 配置
+  flyway:
+    enabled: true
+    table: flyway_schema
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  # redis 配置
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
+    timeout: 6000
+
+# server 配置
+server:
+  port: 8180
+
+# mybatis 配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+# RocketMQ 配置
+rocketmq:
+  name-server: 127:0:0:1:9876
+  apiLog:
+    topic: apiLog
+  producer:
+    groups: apiLog_producer
+  consumer:
+    groups: apiLog_consumer
+
+# 多路数据源配置
+#mini-db-router:
+#  jdbc:
+#    datasource:
+#      dbCount: 2
+#      tbCount: 2
+#      default: db00
+#      routerKey: uId
+#      list: db01,db02
+#      db00:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        url: jdbc:mysql://127.0.0.1:3306/common-tools?autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#        username: root
+#        password: 123456
+#      db01:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        url: jdbc:mysql://127.0.0.1:3306/common-tools-01?autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#        username: root
+#        password: 123456
+#      db02:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        url: jdbc:mysql://127.0.0.1:3306/common-tools-02?autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+#        username: root
+#        password: 123456
+
+# 限流设置
+flowLimit:
+  # 每分钟最多请求次数
+  maxCount: 30
+
+# 用户白名单限制
+latrell:
+  door:
+    enabled: true
+    userStr: 1,12,admin,zhangSan # 白名单用户ID，多个用逗号隔开

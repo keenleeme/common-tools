@@ -1,0 +1,783 @@
+2022-10-21 15:51:20.672 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 18240 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 15:51:20.678 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 15:51:20.679 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 15:51:20.680 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 15:51:20.888 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 15:51:20.889 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 15:51:22.198 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 15:51:23.899 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.latrell.common.config.dbrouter.config.DataSourceAutoConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound. 
+2022-10-21 15:51:23.920 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 15:51:23.951 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+2022-10-21 15:53:40.729 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 19132 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 15:53:40.734 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 15:53:40.732 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 15:53:40.735 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 15:53:40.815 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 15:53:40.816 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 15:53:41.496 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 15:53:42.490 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 15:53:42.493 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 15:53:42.535 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces. 
+2022-10-21 15:53:43.673 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 15:53:43.688 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 15:53:43.689 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 15:53:43.689 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 15:53:43.859 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 15:53:43.859 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3042 ms 
+2022-10-21 15:53:44.114 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 15:53:46.837 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 15:53:47.186 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 15:53:47.349 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiLogAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'operateLogMapper' defined in file [E:\latrell-code\target\classes\com\latrell\test\mapper\OperateLogMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+2022-10-21 15:53:47.371 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 15:53:47.412 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 15:53:47.437 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+2022-10-21 15:56:12.695 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 15:56:12.695 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 11992 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 15:56:12.703 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 15:56:12.704 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 15:56:12.820 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 15:56:12.820 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 15:56:13.625 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 15:56:14.516 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.latrell.common.config.dbrouter.config.DataSourceAutoConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound. 
+2022-10-21 15:56:14.529 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 15:56:14.548 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+2022-10-21 16:09:25.575 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 23208 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:09:25.575 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:09:25.584 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:09:25.585 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:09:25.667 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:09:25.667 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:09:26.253 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:09:27.403 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:09:27.406 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:09:27.451 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:09:28.414 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:09:28.424 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:09:28.425 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:09:28.426 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:09:28.572 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:09:28.572 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2903 ms 
+2022-10-21 16:09:28.797 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:09:31.345 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:09:31.726 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:09:31.874 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiLogAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'operateLogMapper' defined in file [E:\latrell-code\target\classes\com\latrell\test\mapper\OperateLogMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+2022-10-21 16:09:31.896 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:09:31.932 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:09:31.957 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+2022-10-21 16:11:00.941 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 26248 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:11:00.952 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:11:00.953 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:11:01.014 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:11:01.183 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:11:01.184 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:11:02.578 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:11:04.454 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:11:04.463 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:11:04.552 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:11:06.556 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:11:06.574 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:11:06.575 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:11:06.575 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:11:06.888 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:11:06.889 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5702 ms 
+2022-10-21 16:11:07.413 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:11:12.058 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:11:12.631 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:13:48.259 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiLogAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'operateLogMapper' defined in file [E:\latrell-code\target\classes\com\latrell\test\mapper\OperateLogMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+2022-10-21 16:13:48.286 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:13:48.312 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:13:48.352 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+2022-10-21 16:14:11.410 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:14:11.410 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 25860 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:14:11.417 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:14:11.418 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:14:11.566 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:14:11.567 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:14:12.435 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:14:13.427 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:14:13.431 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:14:13.490 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:14:14.786 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:14:14.799 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:14:14.800 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:14:14.800 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:14:14.967 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:14:14.968 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3399 ms 
+2022-10-21 16:14:15.245 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:14:17.960 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:14:18.287 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:17:10.491 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiLogAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'operateLogMapper' defined in file [E:\latrell-code\target\classes\com\latrell\test\mapper\OperateLogMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+2022-10-21 16:17:10.519 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:17:10.540 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:17:10.566 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+2022-10-21 16:17:55.368 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:17:55.368 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 16320 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:17:55.376 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:17:55.377 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:17:55.518 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:17:55.518 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:17:56.640 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:17:57.731 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.latrell.common.config.dbrouter.config.DataSourceAutoConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound. 
+2022-10-21 16:17:57.752 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:17:57.782 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+2022-10-21 16:20:27.452 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:20:27.446 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 27492 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:20:27.462 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:20:27.463 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:20:27.724 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:20:27.724 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:20:28.583 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:20:29.765 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:20:29.768 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:20:29.813 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:20:31.109 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:20:31.122 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:20:31.123 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:20:31.124 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:20:31.297 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:20:31.298 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3571 ms 
+2022-10-21 16:20:31.579 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:20:34.283 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:20:34.617 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:20:34.789 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiLogAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'operateLogMapper' defined in file [E:\latrell-code\target\classes\com\latrell\test\mapper\OperateLogMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class 
+2022-10-21 16:20:34.816 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:20:34.838 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:20:34.868 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+ 
+2022-10-21 16:21:22.834 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 16212 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:21:22.828 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:21:22.838 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:21:22.838 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:21:22.979 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:21:22.980 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:21:23.794 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:21:24.729 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:21:24.732 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:21:24.777 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:21:25.979 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:21:25.991 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:21:25.992 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:21:25.992 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:21:26.156 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:21:26.157 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3174 ms 
+2022-10-21 16:21:26.397 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:21:29.053 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:21:29.379 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:22:16.541 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 16:22:16.725 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 16:22:16.825 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 16:22:17.344 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 16:22:21.519 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+ 
+2022-10-21 16:22:21.520 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2022-10-21 16:22:21.544 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:22:21.558 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:22:21.586 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.latrell.CommonToolsApplication.main(CommonToolsApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:66)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:69)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:475)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:164)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:194)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	... 28 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:816)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:741)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:709)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:132)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:540)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1449)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849)
+	... 40 common frames omitted
+2022-10-21 16:23:17.455 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:23:17.467 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 1260 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:23:17.468 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:23:17.470 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:23:17.612 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:23:17.613 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:23:18.527 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:23:19.671 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:23:19.676 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:23:19.740 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:23:21.301 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:23:21.316 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:23:21.317 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:23:21.317 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:23:21.643 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:23:21.644 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4029 ms 
+2022-10-21 16:23:22.026 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:23:25.451 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:23:25.885 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:23:27.476 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 16:23:27.632 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 16:23:27.714 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 16:23:28.204 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 16:23:32.373 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+ 
+2022-10-21 16:23:32.374 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2022-10-21 16:23:32.395 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-10-21 16:23:32.407 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-10-21 16:23:32.432 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.latrell.CommonToolsApplication.main(CommonToolsApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+----------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:66)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:69)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:475)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:164)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:194)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:57)
+	... 28 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:816)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:741)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:709)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:132)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:540)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1449)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849)
+	... 40 common frames omitted
+2022-10-21 16:31:08.171 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 16:31:08.179 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 27144 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 16:31:08.180 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 16:31:08.181 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 16:31:08.289 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 16:31:08.290 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 16:31:08.999 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 16:31:09.984 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 16:31:09.987 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 16:31:10.032 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces. 
+2022-10-21 16:31:11.275 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 16:31:11.288 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:31:11.289 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 16:31:11.290 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 16:31:11.462 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 16:31:11.462 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3171 ms 
+2022-10-21 16:31:11.715 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 16:31:14.746 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 16:31:15.079 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 16:31:16.701 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 16:31:16.865 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 16:31:16.944 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 16:31:17.677 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 16:31:17.985 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-21 16:31:18.203 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.176s) 
+2022-10-21 16:31:18.226 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-21 16:31:18.227 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-21 16:31:18.337 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-21 16:31:18.356 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-21 16:31:18.357 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-21 16:31:18.383 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-21 16:31:18.432 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-21 16:31:18.933 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 11.822 seconds (JVM running for 14.474) 
+2022-10-21 16:31:18.934 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-21 16:31:18.939 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-21 16:32:53.479 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-21 16:32:53.479 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-21 16:32:53.481 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms 
+2022-10-21 16:37:15.261 [http-nio-8180-exec-5] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'delegate' in 'class com.sun.proxy.$Proxy163'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：0.467 s 
+2022-10-21 16:37:15.275 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T16:37:15.275' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 16:40:47.926 [http-nio-8180-exec-4] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'delegate' in 'class com.sun.proxy.$Proxy163'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：37.528 s 
+2022-10-21 16:40:47.934 [fixed-thread-1] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T16:40:47.933' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 16:52:23.600 [http-nio-8180-exec-8] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'org' in 'class com.sun.proxy.$Proxy163'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：49.706 s 
+2022-10-21 16:52:23.605 [fixed-thread-2] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T16:52:23.605' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:00:13.858 [http-nio-8180-exec-1] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'delegate' in 'class com.sun.proxy.$Proxy163'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：192.479 s 
+2022-10-21 17:00:55.933 [fixed-thread-3] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:00:55.422' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:04:46.843 [http-nio-8180-exec-3] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'delegate' in 'class com.sun.proxy.$Proxy163'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：46.005 s 
+2022-10-21 17:04:46.846 [fixed-thread-4] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:04:46.846' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:13:45.811 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2022-10-21 17:17:55.111 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 17:17:55.135 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 7500 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 17:17:55.136 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 17:17:55.137 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 17:17:55.282 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 17:17:55.283 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 17:17:55.998 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 17:17:57.477 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 17:17:57.480 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 17:17:57.520 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces. 
+2022-10-21 17:17:58.759 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 17:17:58.776 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:17:58.777 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 17:17:58.777 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 17:17:58.944 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 17:17:58.945 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3659 ms 
+2022-10-21 17:17:59.223 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 17:18:02.125 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 17:18:02.479 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 17:18:04.143 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 17:18:04.304 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 17:18:04.381 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 17:18:04.935 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 17:18:05.139 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-21 17:18:05.253 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.076s) 
+2022-10-21 17:18:05.277 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-21 17:18:05.278 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-21 17:18:05.377 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:18:05.392 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-21 17:18:05.394 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-21 17:18:05.418 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-21 17:18:05.466 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-21 17:18:05.943 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 11.989 seconds (JVM running for 15.1) 
+2022-10-21 17:18:05.944 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-21 17:18:05.947 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-21 17:18:48.275 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-21 17:18:48.275 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-21 17:18:48.277 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms 
+2022-10-21 17:19:21.629 [http-nio-8180-exec-1] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'delegate' in 'class com.sun.proxy.$Proxy148'，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：33.305 s 
+2022-10-21 17:19:21.640 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:19:21.639' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:38:11.376 [http-nio-8180-exec-2] INFO  c.l.common.config.spring.aspect.log.ApiLogAspect - 操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+响应内容：{"code":0,"data":[{"createdTime":"2022-10-11T22:34:01","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15732156810","realName":"系统管理员","removed":0,"updatedTime":"2022-10-11T22:33:58","userId":1,"userName":"admin"},{"createdTime":"2022-10-11T22:36:28","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"18110436810","realName":"拉特德尔","removed":0,"updatedTime":"2022-10-11T22:36:36","userId":2,"userName":"latrell"},{"createdTime":"2022-10-12T10:19:09","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"13622189787","realName":"李四","removed":0,"updatedTime":"2022-10-12T10:19:12","userId":3,"userName":"Antony"},{"createdTime":"2022-10-12T10:31:25","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15856211992","realName":"丽萨","removed":0,"userId":4,"userName":"Lisa"},{"createdTime":"2022-10-12T15:24:31","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"18325784388","realName":"玛丽","removed":0,"updatedTime":"2022-10-12T15:24:31","userId":5,"userName":"Mary"},{"createdTime":"2022-10-12T17:36:55","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15678451245","realName":"马飞","removed":0,"updatedTime":"2022-10-12T17:36:55","userId":11,"userName":"Mafe"},{"createdTime":"2022-10-13T09:49:43","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"19658741258","realName":"南孙","removed":0,"updatedTime":"2022-10-13T09:49:43","userId":12,"userName":"Nancy"},{"createdTime":"2022-10-13T09:59:22","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15478412589","realName":"森碟","removed":0,"updatedTime":"2022-10-13T09:59:22","userId":13,"userName":"Cindy"}],"message":"成功","pageId":"common_tools","success":true}, 
+接口请求耗时：55.148 s 
+2022-10-21 17:38:11.381 [fixed-thread-1] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:38:11.381' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:38:13.396 [fixed-thread-1] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:61)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-21 17:48:34.740 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 17:48:34.763 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 23624 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 17:48:34.764 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 17:48:34.765 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 17:48:34.923 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 17:48:34.923 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 17:48:35.867 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 17:48:37.084 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 17:48:37.084 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 17:48:37.131 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces. 
+2022-10-21 17:48:38.667 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 17:48:38.667 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:48:38.667 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 17:48:38.667 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 17:48:38.865 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 17:48:38.865 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3940 ms 
+2022-10-21 17:48:39.168 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 17:48:42.031 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 17:48:42.365 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 17:48:44.115 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 17:48:44.283 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 17:48:44.373 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 17:48:44.877 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 17:48:45.085 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-21 17:48:45.165 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.051s) 
+2022-10-21 17:48:45.181 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-21 17:48:45.181 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-21 17:48:45.270 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:48:45.286 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-21 17:48:45.286 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-21 17:48:45.317 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-21 17:48:45.364 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-21 17:48:45.849 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 12.447 seconds (JVM running for 15.717) 
+2022-10-21 17:48:45.849 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-21 17:48:45.849 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-21 17:49:04.295 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-21 17:49:04.295 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-21 17:49:04.297 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-10-21 17:49:51.598 [http-nio-8180-exec-1] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：java.lang.NullPointerException，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+接口请求耗时：36.722 s 
+2022-10-21 17:49:52.379 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:49:52.379' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:49:52.616 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:61)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-21 17:54:35.691 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-21 17:54:35.706 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 12524 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-21 17:54:35.706 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-21 17:54:35.706 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-21 17:54:35.826 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-21 17:54:35.826 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-21 17:54:36.604 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-21 17:54:37.608 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-21 17:54:37.608 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-21 17:54:37.654 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces. 
+2022-10-21 17:54:39.007 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-21 17:54:39.007 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:54:39.007 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-21 17:54:39.007 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-21 17:54:39.175 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-21 17:54:39.175 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3349 ms 
+2022-10-21 17:54:39.463 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-21 17:54:42.309 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-21 17:54:42.659 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-21 17:54:44.179 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-21 17:54:44.354 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-21 17:54:44.425 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-21 17:54:44.942 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-21 17:54:45.125 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-21 17:54:45.215 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.044s) 
+2022-10-21 17:54:45.229 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-21 17:54:45.229 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-21 17:54:45.323 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-21 17:54:45.339 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-21 17:54:45.339 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-21 17:54:45.354 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-21 17:54:45.408 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-21 17:54:45.898 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 11.293 seconds (JVM running for 14.233) 
+2022-10-21 17:54:45.900 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-21 17:54:45.903 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-21 17:55:06.093 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-21 17:55:06.093 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-21 17:55:06.093 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms 
+2022-10-21 17:56:08.532 [http-nio-8180-exec-10] INFO  c.l.c.c.d.strategy.impl.DBRouterStrategyHashCode - 数据库路由 dbIdx: 1, tbIdx: 0 
+2022-10-21 17:56:15.789 [http-nio-8180-exec-10] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getList，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["10000"]}，
+接口请求耗时：59.601 s 
+2022-10-21 17:56:15.851 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-21T17:56:15.851' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-21 17:56:15.926 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:61)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

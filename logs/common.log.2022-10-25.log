@@ -1,0 +1,555 @@
+2022-10-25 15:53:57.755 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 15:53:57.783 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 23456 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-25 15:53:57.783 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 15:53:57.784 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 15:53:57.906 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 15:53:57.906 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 15:53:58.709 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 15:54:00.513 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 15:54:00.517 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 15:54:00.564 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces. 
+2022-10-25 15:54:01.760 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 15:54:01.776 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 15:54:01.777 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 15:54:01.777 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 15:54:01.943 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 15:54:01.943 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4035 ms 
+2022-10-25 15:54:02.242 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 15:54:05.291 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 15:54:05.582 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 15:54:07.018 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 15:54:07.166 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 15:54:07.227 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 15:54:07.677 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 15:54:07.879 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 15:54:08.047 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.135s) 
+2022-10-25 15:54:08.064 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 15:54:08.065 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 15:54:08.163 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 15:54:08.178 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 15:54:08.180 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 15:54:08.203 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 15:54:08.502 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 15:54:08.737 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 12.172 seconds (JVM running for 15.021) 
+2022-10-25 15:54:08.737 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 15:54:08.740 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 15:57:47.609 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 15:57:47.619 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 1480 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-25 15:57:47.620 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 15:57:47.620 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 15:57:47.724 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 15:57:47.724 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 15:57:48.344 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 15:57:49.112 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 15:57:49.115 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 15:57:49.148 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces. 
+2022-10-25 15:57:50.099 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 15:57:50.108 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 15:57:50.109 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 15:57:50.109 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 15:57:50.244 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 15:57:50.244 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2519 ms 
+2022-10-25 15:57:50.535 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 15:57:52.685 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 15:57:52.932 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 15:57:54.154 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 15:57:54.305 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 15:57:54.365 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 15:57:54.752 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 15:57:54.900 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 15:57:54.954 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.033s) 
+2022-10-25 15:57:54.968 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 15:57:54.969 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 15:57:55.047 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 15:57:55.059 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 15:57:55.060 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 15:57:55.081 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 15:57:55.114 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 15:57:55.478 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 8.766 seconds (JVM running for 10.783) 
+2022-10-25 15:57:55.479 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 15:57:55.482 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 15:58:15.124 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-25 15:58:15.125 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-25 15:58:15.126 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-10-25 15:59:32.980 [http-nio-8180-exec-10] INFO  com.latrell.common.config.dodoor.DoorAspect - latrell door handler method: getListById, value: 1 
+2022-10-25 16:00:47.625 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 16:00:47.634 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 3636 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-25 16:00:47.634 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 16:00:47.635 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 16:00:47.731 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 16:00:47.732 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 16:00:48.360 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 16:00:49.200 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 16:00:49.203 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 16:00:49.239 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces. 
+2022-10-25 16:00:50.270 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 16:00:50.282 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:00:50.283 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 16:00:50.283 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 16:00:50.420 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 16:00:50.421 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2688 ms 
+2022-10-25 16:00:50.694 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 16:00:53.079 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 16:00:53.376 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 16:00:54.703 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 16:00:54.867 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 16:00:54.934 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 16:00:55.349 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 16:00:55.506 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 16:00:55.566 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.036s) 
+2022-10-25 16:00:55.581 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 16:00:55.582 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 16:00:55.667 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:00:55.680 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 16:00:55.682 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 16:00:55.701 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 16:00:55.945 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 16:00:56.141 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 9.433 seconds (JVM running for 11.786) 
+2022-10-25 16:00:56.141 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 16:00:56.144 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 16:01:11.577 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-25 16:01:11.577 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-25 16:01:11.579 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms 
+2022-10-25 16:01:26.835 [http-nio-8180-exec-10] INFO  com.latrell.common.config.dodoor.DoorAspect - latrell door handler method: getListById, value: 12 
+2022-10-25 16:01:32.581 [http-nio-8180-exec-10] INFO  c.l.c.c.d.strategy.impl.DBRouterStrategyHashCode - 数据库路由 dbIdx: 1, tbIdx: 1 
+2022-10-25 16:01:32.586 [http-nio-8180-exec-10] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getList，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["12"]}，
+接口请求耗时：0.288 s 
+2022-10-25 16:01:32.632 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:01:32.631' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:01:32.689 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 16:03:54.241 [http-nio-8180-exec-5] INFO  com.latrell.common.config.dodoor.DoorAspect - latrell door handler method: getListById, value: 12 
+2022-10-25 16:03:54.461 [http-nio-8180-exec-5] INFO  c.l.c.c.d.strategy.impl.DBRouterStrategyHashCode - 数据库路由 dbIdx: 1, tbIdx: 1 
+2022-10-25 16:03:54.462 [http-nio-8180-exec-5] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getList，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["12"]}，
+接口请求耗时：0.221 s 
+2022-10-25 16:03:54.463 [fixed-thread-1] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:03:54.463' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:03:54.475 [fixed-thread-1] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 16:05:18.490 [http-nio-8180-exec-7] INFO  com.latrell.common.config.dodoor.DoorAspect - latrell door handler method: getListById, value: 1 
+2022-10-25 16:05:18.708 [http-nio-8180-exec-7] INFO  c.l.c.c.d.strategy.impl.DBRouterStrategyHashCode - 数据库路由 dbIdx: 1, tbIdx: 1 
+2022-10-25 16:05:18.709 [http-nio-8180-exec-7] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getList，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["1"]}，
+接口请求耗时：0.218 s 
+2022-10-25 16:05:18.710 [fixed-thread-2] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:05:18.710' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:05:18.720 [fixed-thread-2] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 16:05:34.709 [http-nio-8180-exec-9] INFO  c.l.common.config.spring.aspect.log.ApiLogAspect - 操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListByUserName，
+请求参数：{"userName":["admin"]}，
+响应内容：{"code":0,"data":[{"createdTime":"2022-10-11T22:34:01","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15732156810","realName":"系统管理员","removed":0,"updatedTime":"2022-10-11T22:33:58","userId":1,"userName":"admin"}],"message":"成功","pageId":"common_tools","success":true}, 
+接口请求耗时：0.274 s 
+2022-10-25 16:05:34.710 [fixed-thread-3] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:05:34.710' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:05:34.720 [fixed-thread-3] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 16:07:50.616 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 16:07:50.627 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 11324 (E:\latrell-code\target\classes started by liz in E:\latrell-code) 
+2022-10-25 16:07:50.627 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 16:07:50.628 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 16:07:50.722 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 16:07:50.722 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 16:07:51.364 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 16:07:52.145 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 16:07:52.148 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 16:07:52.182 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces. 
+2022-10-25 16:07:53.189 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 16:07:53.199 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:07:53.200 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 16:07:53.200 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 16:07:53.338 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 16:07:53.339 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2615 ms 
+2022-10-25 16:07:53.566 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 16:07:55.702 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 16:07:55.957 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 16:07:57.246 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 16:07:57.414 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 16:07:57.481 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 16:07:57.896 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 16:07:58.059 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 16:07:58.113 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.032s) 
+2022-10-25 16:07:58.128 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 16:07:58.128 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 16:07:58.215 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:07:58.227 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 16:07:58.228 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 16:07:58.246 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 16:07:58.480 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 16:07:58.669 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 8.975 seconds (JVM running for 11.117) 
+2022-10-25 16:07:58.669 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 16:07:58.672 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 16:13:33.768 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-25 16:13:33.768 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-25 16:13:33.769 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-10-25 16:13:40.176 [http-nio-8180-exec-10] INFO  com.latrell.common.config.dodoor.DoorAspect - latrell door handler method: getListById, value: 1 
+2022-10-25 16:13:40.411 [http-nio-8180-exec-10] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getListById，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["1"]}，
+接口请求耗时：0.231 s 
+2022-10-25 16:13:40.455 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:13:40.454' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:13:40.511 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 16:15:08.013 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2022-10-25 16:20:17.988 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 16:20:17.996 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 4444 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 16:20:17.996 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 16:20:17.996 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 16:20:18.046 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 16:20:18.046 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 16:20:18.344 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 16:20:19.080 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 16:20:19.082 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 16:20:19.106 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces. 
+2022-10-25 16:20:20.037 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 16:20:20.046 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:20:20.046 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 16:20:20.046 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 16:20:20.148 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 16:20:20.148 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2101 ms 
+2022-10-25 16:20:20.317 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 16:20:22.370 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 16:20:22.650 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 16:20:23.764 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 16:20:23.881 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 16:20:23.906 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 16:20:24.236 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 16:20:24.363 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 16:20:24.423 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.039s) 
+2022-10-25 16:20:24.437 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 16:20:24.438 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 16:20:24.505 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 16:20:24.515 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 16:20:24.516 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 16:20:24.530 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 16:20:24.559 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 16:20:24.695 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 7.184 seconds (JVM running for 7.888) 
+2022-10-25 16:20:24.695 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 16:20:24.697 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 16:20:39.551 [http-nio-8180-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-25 16:20:39.551 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-25 16:20:39.553 [http-nio-8180-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms 
+2022-10-25 16:20:48.507 [http-nio-8180-exec-10] INFO  c.l.common.config.spring.aspect.log.ApiLogAspect - 操作IP地址：10.11.44.220，
+接口Uri: /api/user/getList，
+请求参数：null，
+响应内容：{"code":0,"data":[{"createdTime":"2022-10-11T22:34:01","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15732156810","realName":"系统管理员","removed":0,"updatedTime":"2022-10-11T22:33:58","userId":1,"userName":"admin"},{"createdTime":"2022-10-11T22:36:28","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"18110436810","realName":"拉特德尔","removed":0,"updatedTime":"2022-10-11T22:36:36","userId":2,"userName":"latrell"},{"createdTime":"2022-10-12T10:19:09","gender":1,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"13622189787","realName":"李四","removed":0,"updatedTime":"2022-10-12T10:19:12","userId":3,"userName":"Antony"},{"createdTime":"2022-10-12T10:31:25","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15856211992","realName":"丽萨","removed":0,"userId":4,"userName":"Lisa"},{"createdTime":"2022-10-12T15:24:31","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"18325784388","realName":"玛丽","removed":0,"updatedTime":"2022-10-12T15:24:31","userId":5,"userName":"Mary"},{"createdTime":"2022-10-12T17:36:55","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15678451245","realName":"马飞","removed":0,"updatedTime":"2022-10-12T17:36:55","userId":11,"userName":"Mafe"},{"createdTime":"2022-10-13T09:49:43","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"19658741258","realName":"南孙","removed":0,"updatedTime":"2022-10-13T09:49:43","userId":12,"userName":"Nancy"},{"createdTime":"2022-10-13T09:59:22","gender":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","phoneNumber":"15478412589","realName":"森碟","removed":0,"updatedTime":"2022-10-13T09:59:22","userId":13,"userName":"Cindy"}],"message":"成功","pageId":"common_tools","success":true}, 
+接口请求耗时：0.335 s 
+2022-10-25 16:20:48.514 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T16:20:48.513' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 16:20:48.535 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 17:40:00.651 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 17:40:00.660 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 22496 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 17:40:00.661 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 17:40:00.661 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 17:40:00.716 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 17:40:00.716 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 17:40:01.110 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 17:40:01.626 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Unable to read meta-data for class com.latrell.common.config.dodoor.config.StarterAutoConfigure
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:237)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getOrder(AutoConfigurationSorter.java:208)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.access$000(AutoConfigurationSorter.java:154)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.lambda$getInPriorityOrder$0(AutoConfigurationSorter.java:63)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:360)
+	at java.util.TimSort.sort(TimSort.java:234)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1462)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.getInPriorityOrder(AutoConfigurationSorter.java:62)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.sortAutoConfigurations(AutoConfigurationImportSelector.java:468)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.selectImports(AutoConfigurationImportSelector.java:453)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGrouping.getImports(ConfigurationClassParser.java:882)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.latrell.CommonToolsApplication.main(CommonToolsApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/latrell/common/config/dodoor/config/StarterAutoConfigure.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:187)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:233)
+	... 31 common frames omitted
+2022-10-25 17:40:48.298 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 17:40:48.301 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 14972 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 17:40:48.304 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 17:40:48.305 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 17:40:48.402 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 17:40:48.403 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 17:40:48.924 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 17:40:49.646 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 17:40:49.649 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 17:40:49.684 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces. 
+2022-10-25 17:40:50.695 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 17:40:50.707 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 17:40:50.708 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 17:40:50.708 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 17:40:50.845 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 17:40:50.845 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2441 ms 
+2022-10-25 17:40:51.081 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 17:40:53.325 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 17:40:53.708 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 17:40:55.056 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 17:40:55.228 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 17:40:55.296 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 17:40:55.717 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 17:40:55.878 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 17:40:55.952 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.047s) 
+2022-10-25 17:40:55.967 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 17:40:55.968 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 17:40:56.054 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 17:40:56.068 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 17:40:56.070 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 17:40:56.088 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 17:40:56.125 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 17:40:56.540 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 8.787 seconds (JVM running for 10.141) 
+2022-10-25 17:40:56.541 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 17:40:56.544 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 17:41:04.448 [http-nio-8180-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-10-25 17:41:04.448 [http-nio-8180-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-10-25 17:41:04.450 [http-nio-8180-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms 
+2022-10-25 17:41:15.126 [http-nio-8180-exec-10] INFO  com.latrell.DoorAspect - latrell door handler method: getListById, value: 12 
+2022-10-25 17:41:15.145 [http-nio-8180-exec-10] WARN  c.l.common.config.spring.aspect.log.ApiLogAspect - 接口操作异常：org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.latrell.test.mapper.UserMapper.getListById，
+操作IP地址：10.11.44.220，
+接口Uri: /api/user/getListById，
+请求参数：{"userId":["12"]}，
+接口请求耗时：0.29 s 
+2022-10-25 17:41:15.192 [fixed-thread-0] WARN  c.l.common.config.mybatis.MybatisPlusObjectHandler - mybatis set updated_time error. org.apache.ibatis.reflection.ReflectionException: Could not set property 'updatedTime' of 'class com.latrell.test.domain.OperateLog' with value '2022-10-25T17:41:15.191' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'updatedTime' in 'class com.latrell.test.domain.OperateLog' 
+2022-10-25 17:41:15.245 [fixed-thread-0] WARN  com.latrell.common.config.rocketmq.ApiLogProducer - 生产者发送消息异常：{} 
+org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, apiLog
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:662)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1310)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1256)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:339)
+	at com.latrell.common.config.rocketmq.ApiLogProducer.sendMsg(ApiLogProducer.java:76)
+	at com.latrell.common.config.spring.aspect.log.ApiLogAspect.lambda$process$0(ApiLogAspect.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-10-25 17:42:33.942 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 17:42:33.949 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 21016 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 17:42:33.950 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 17:42:33.950 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 17:42:34.049 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 17:42:34.049 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 17:42:34.778 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 17:42:35.570 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 17:42:35.572 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 17:42:35.608 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces. 
+2022-10-25 17:42:36.702 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 17:42:36.714 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 17:42:36.714 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 17:42:36.715 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 17:42:36.855 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 17:42:36.855 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2805 ms 
+2022-10-25 17:42:37.095 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 17:42:39.370 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 17:42:39.636 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 17:42:40.917 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 17:42:41.083 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 17:42:41.150 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 17:42:41.569 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 17:42:41.733 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://127.0.0.1:3306/common-tools (MySQL 5.7) 
+2022-10-25 17:42:41.790 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.034s) 
+2022-10-25 17:42:41.806 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 17:42:41.807 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 17:42:41.892 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 17:42:41.905 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 17:42:41.906 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 17:42:41.924 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 17:42:41.960 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 17:42:42.366 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 9.306 seconds (JVM running for 11.569) 
+2022-10-25 17:42:42.366 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 17:42:42.369 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
+2022-10-25 19:41:23.764 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 19:41:23.780 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 25764 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 19:41:23.780 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 19:41:23.780 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 19:41:23.905 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 19:41:23.905 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 19:41:24.701 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 19:41:25.071 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Unable to read meta-data for class com.latrell.common.config.dbrouter.config.DataSourceAutoConfig
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:237)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getOrder(AutoConfigurationSorter.java:208)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.access$000(AutoConfigurationSorter.java:154)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.lambda$getInPriorityOrder$0(AutoConfigurationSorter.java:63)
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:360)
+	at java.util.TimSort.sort(TimSort.java:234)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1462)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter.getInPriorityOrder(AutoConfigurationSorter.java:62)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.sortAutoConfigurations(AutoConfigurationImportSelector.java:468)
+	at org.springframework.boot.autoconfigure.AutoConfigurationImportSelector$AutoConfigurationGroup.selectImports(AutoConfigurationImportSelector.java:453)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGrouping.getImports(ConfigurationClassParser.java:882)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.latrell.CommonToolsApplication.main(CommonToolsApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/latrell/common/config/dbrouter/config/DataSourceAutoConfig.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:187)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.boot.autoconfigure.AutoConfigurationSorter$AutoConfigurationClass.getAnnotationMetadata(AutoConfigurationSorter.java:233)
+	... 31 common frames omitted
+2022-10-25 19:41:49.306 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final 
+2022-10-25 19:41:49.322 [restartedMain] INFO  com.latrell.CommonToolsApplication - Starting CommonToolsApplication using Java 1.8.0_172 on LAPTOP-G8L8NV6F with PID 13460 (E:\latrell\latrell-code\target\classes started by liz in E:\latrell\latrell-code) 
+2022-10-25 19:41:49.322 [restartedMain] DEBUG com.latrell.CommonToolsApplication - Running with Spring Boot v2.4.4, Spring v5.3.5 
+2022-10-25 19:41:49.322 [restartedMain] INFO  com.latrell.CommonToolsApplication - No active profile set, falling back to default profiles: default 
+2022-10-25 19:41:49.416 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2022-10-25 19:41:49.416 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2022-10-25 19:41:50.025 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+2022-10-25 19:41:50.790 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2022-10-25 19:41:50.790 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-10-25 19:41:50.822 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces. 
+2022-10-25 19:41:51.868 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http) 
+2022-10-25 19:41:51.884 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"] 
+2022-10-25 19:41:51.884 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2022-10-25 19:41:51.884 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44] 
+2022-10-25 19:41:52.024 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-10-25 19:41:52.024 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2608 ms 
+2022-10-25 19:41:52.259 [restartedMain] DEBUG c.l.common.config.spring.aspect.log.ApiLogFilter - Filter 'apiLogFilter' configured for use 
+2022-10-25 19:41:54.453 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogConsumer - API 日志消费者 启动成功... 
+2022-10-25 19:41:54.722 [restartedMain] INFO  com.latrell.common.config.rocketmq.ApiLogProducer - API 日志生产者 启动成功... 
+2022-10-25 19:41:56.284 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+2022-10-25 19:41:56.459 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-10-25 19:41:56.553 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2022-10-25 19:41:57.091 [restartedMain] INFO  org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 7.1.1 by Redgate 
+2022-10-25 19:41:57.106 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+2022-10-25 19:41:57.284 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+2022-10-25 19:41:57.346 [restartedMain] INFO  o.f.core.internal.database.base.DatabaseType - Database: jdbc:mysql://localhost:3306/common-tools (MySQL 5.7) 
+2022-10-25 19:41:57.440 [restartedMain] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.061s) 
+2022-10-25 19:41:57.459 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema `common-tools`: 20221012140508 
+2022-10-25 19:41:57.459 [restartedMain] INFO  org.flywaydb.core.internal.command.DbMigrate - Schema `common-tools` is up to date. No migration necessary. 
+2022-10-25 19:41:57.599 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"] 
+2022-10-25 19:41:57.615 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '' 
+2022-10-25 19:41:57.615 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed 
+2022-10-25 19:41:57.928 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2022-10-25 19:41:58.006 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2022-10-25 19:41:58.353 [restartedMain] INFO  com.latrell.CommonToolsApplication - Started CommonToolsApplication in 9.887 seconds (JVM running for 11.957) 
+2022-10-25 19:41:58.353 [restartedMain] INFO  c.l.common.config.spring.event.CustomEventCaster - 应用启动成功后，发送通知事件 
+2022-10-25 19:41:58.353 [restartedMain] INFO  com.latrell.CommonToolsApplication - application started! 
