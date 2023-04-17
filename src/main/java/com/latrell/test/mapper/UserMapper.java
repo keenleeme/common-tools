@@ -20,4 +20,6 @@ public interface UserMapper extends BaseMapper<SysUser> {
 
     List<SysUser> queryListById(@Param("userId") Long userId);
 
+    List<SysUser> queryListById(@Param("userId") Long userId, @Param("userName") String userName);
+
 }

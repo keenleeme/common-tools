@@ -606,8 +606,54 @@ public final class RedisUtil {
      */
     public long lRemove(String key, long count, Object value) {
         try {
-            Long remove = redisTemplate.opsForList().remove(key, count, value);
-            return remove;
+            return redisTemplate.opsForList().remove(key, count, value);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
+     * HLL 添加元素
+     *
+     * @param key 键
+     * @param objects 数组对象
+     * @return long 成功 1
+     */
+    public long hllAdd(String key, Object... objects) {
+        try {
+            return redisTemplate.opsForHyperLogLog().add(key, objects);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
+     * HLL 获取估算元素数
+     *
+     * @param keys 键，可以为多个
+     * @return long 估算元素数
+     */
+    public long hllSize(String... keys) {
+        try {
+            return redisTemplate.opsForHyperLogLog().size(keys);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
+     * HLL 将多个HLL合并到一个键内，并估算元素数
+     *
+     * @param key 合并之后的键
+     * @param sourceKeys 原始键
+     * @return long
+     */
+    public long hllUnion(String key, String... sourceKeys) {
+        try {
+            return redisTemplate.opsForHyperLogLog().union(key, sourceKeys);
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
